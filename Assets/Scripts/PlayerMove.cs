@@ -19,4 +19,9 @@ public class PlayerMove : MonoBehaviour
             transform.Translate(Vector3.right * horizontalSpeed * Time.deltaTime);
         }
     }
+
+    public float GetForwardSpeed()
+    {
+        return forwardSpeed;
+    }
 }

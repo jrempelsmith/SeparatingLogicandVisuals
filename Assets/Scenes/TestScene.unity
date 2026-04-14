@@ -495,9 +495,9 @@ GameObject:
   m_Component:
   - component: {fileID: 560330313}
   - component: {fileID: 560330310}
-  - component: {fileID: 560330314}
-  - component: {fileID: 560330315}
   - component: {fileID: 560330316}
+  - component: {fileID: 560330314}
+  - component: {fileID: 560330317}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -557,20 +557,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d865784ed5c12df4989d0410ea1a8de5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardSpeed: 2
+  forwardSpeed: 9
   horizontalSpeed: 5
---- !u!114 &560330315
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 560330309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c7e8f497fa76ce47b435bb4b4790739, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &560330316
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -598,6 +586,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &560330317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560330309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82daa477ddf6a8e41b75d5cce61317e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMove: {fileID: 560330314}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -693,7 +694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dd851897e1051c4284147a33009d368, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  logic: {fileID: 560330315}
+  logic: {fileID: 560330317}
 --- !u!23 &1753620559
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -757,7 +758,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4285161634983434152, guid: e4436f5bac7150643baba6da6bfc5a9b, type: 3}
       propertyPath: m_Name
-      value: SpeedBoost_IoC
+      value: SpeedBoost
       objectReference: {fileID: 0}
     - target: {fileID: 6989706285694796480, guid: e4436f5bac7150643baba6da6bfc5a9b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -814,7 +815,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2435469598631256219, guid: 9f862e504d2a5b841ac1541233229f4c, type: 3}
       propertyPath: m_Name
-      value: Wall_IoC
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 3999457373175024551, guid: 9f862e504d2a5b841ac1541233229f4c, type: 3}
       propertyPath: m_LocalPosition.x
